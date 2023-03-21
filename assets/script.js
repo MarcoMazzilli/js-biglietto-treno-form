@@ -26,12 +26,15 @@ let prezzoLordo = distance * prezzoAlKm;
 console.log ( 'Prezzo del biglietto non scontato -->', prezzoLordo);
 
 //Calolo la percentuale di sconto e arrotondo la cifra
-if (discount === "mineronne"){
+if (discount === "minorenne"){
   prezzoNetto = prezzoLordo*= 1 -(discountUnder / 100);
+  document.getElementById('tipoOfferta').innerHTML = "\'Sconto giovani\'";
 }else if (discount === "over-65"){
   prezzoNetto = prezzoLordo*= 1 -(discountOver / 100);
+  document.getElementById('tipoOfferta').innerHTML = "\'Diventare grandi\'";
 }else {
   prezzoNetto = prezzoLordo;
+  document.getElementById('tipoOfferta').innerHTML = "\'Viaggia Sicuro\'";
 }
 //arrotondo la cifra prima di mandarla in output
 prezzoNetto = prezzoNetto.toFixed(2)
@@ -42,4 +45,6 @@ document.getElementById('nomeOutput').innerHTML = name;
 document.getElementById('carrozzaOutput').innerHTML = " " + carrozzaNumber;
 document.getElementById('codiceCpOutput').innerHTML = " " + cpCode;
 document.getElementById('prezzoNettoOutput').innerHTML = '' + prezzoNetto;
+
+//Specifico il tipo di offerta all'interno del biglietto
 })

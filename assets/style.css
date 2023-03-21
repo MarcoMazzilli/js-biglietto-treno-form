@@ -4,6 +4,7 @@
 }
 .txt-color-mm {
   color: rgb(0, 100, 100);
+  text-shadow: 1px 1px 1px white;
 }
 img {
   width:80%;

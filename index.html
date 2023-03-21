@@ -10,17 +10,17 @@
 </head>
 <body>
   <header>
-    <div class="container-md py-4 my-2 ">
+    <div class="container-md py-3">
       <h1 class="text-center fw-bolder txt-color-mm"> Calcola il prezzo del biglietto</h1>
     </div>
   </header>
 
-  <main>
-    <div class="container-md my-2 py-4 mm-border bg-white ">
+  <main class="py-3">
+    <div class="container-md my-2 py-4 mm-border bg-white" id="containerForm">
       <div class="row row-cols-1">
 
         <div class="col-sm-5"> <!--Colonna 1-->
-          <div class="input-group mb-3">
+          <div class="input-group sha mb-3">
             <input id="nameInput" type="text" class="form-control" aria-label="Sizing example input" placeholder="Inserisci qui il tuo nome">
           </div>
         </div>
@@ -33,7 +33,7 @@
 
         <div class="col-sm-2"> <!--Colonna 3-->
           <select id="select" class="form-select" aria-label="Default select example">
-            <option value="mineronne">Minorenne</option>
+            <option value="minorenne">Minorenne</option>
             <option selected value="maggiorenne">Maggiorenne</option>
             <option value="over-65">Over-65</option>
           </select>
@@ -49,9 +49,9 @@
   </div>
 
   <h1 class="text-center fw-bolder txt-color-mm py-4"> Dettagli del biglietto</h1>
-  <div class="container-md py-4 mm-border bg-white">
-    <div class="row">
-      <div class="col-3 text-center">
+  <div class="container-md mm-border" id="containerTicket">
+    <div class="row ticket">
+      <div class="col-3 py-4 text-center">
         <img src="assets/img/user-pic.png" alt="Foto utente">
         <p id="nomeOutput" class="text-capitalize fw-bolder fs-5"></p>
       </div>
@@ -67,12 +67,13 @@
           </thead>
           <tbody>
             <tr>
-              <th id="tipoOfferta">????</th>
+              <th id="tipoOfferta"></th>
               <td id="carrozzaOutput"></td>
               <td id="codiceCpOutput"></td>
               <td>
                 <span>&euro;</span>
-                <span id="prezzoNettoOutput"></span></td>
+                <span id="prezzoNettoOutput"></span>
+              </td>
             </tr>
           </tbody>
         </table>
