@@ -26,7 +26,14 @@ if (discount === "mineronne"){
 }else {
   prezzoNetto = prezzoLordo;
 }
+//arrotondo la cifra prima di mandarla in output
 prezzoNetto = prezzoNetto.toFixed(2)
-
 console.log('Prezzo al quale è stato applicato lo sconto -->', prezzoNetto);
 })
+
+//Random number generator Carrozza e Cp code
+let carrozzaNumber = Math.floor(Math.random() * 21);
+console.log('numero carrozza-->',carrozzaNumber);
+
+let cpCode = Math.floor(Math.random() * 1001) + 1000;
+console.log('Cp Code-->',cpCode);
