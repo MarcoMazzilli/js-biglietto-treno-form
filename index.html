@@ -8,7 +8,29 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1> Hello word!</h1>
+  <header>
+    <h1 class="txt-center"> Calcola il prezzo del biglietto</h1>
+
+    <div class="form txt-center">
+      <input id="nameInput" type="text" placeholder="Inserisci qui il tuo nome">
+
+      <input id="distanceInput" type="number" placeholder="Distanza da percorrere" >
+
+      <select id="select">
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="mineronne">Minorenne</option>
+        <option value="over-65">Over-65</option>
+      </select>
+
+      <div>
+        <button id="submitInput">Conferma</button>
+        <button id="resetInput">Reset</button>
+      </div>
+
+    </div>
+  </header>
+
+
   <!--Script-->
   <script src="assets/script.js"></script>
 </body>
