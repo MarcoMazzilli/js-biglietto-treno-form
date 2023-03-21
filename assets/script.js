@@ -1,3 +1,10 @@
+//Random number generator Carrozza e Cp code
+let carrozzaNumber = Math.floor(Math.random() * 21);
+console.log('numero carrozza-->',carrozzaNumber);
+
+let cpCode = Math.floor(Math.random() * 1001) + 1000;
+console.log('Cp Code-->',cpCode);
+
 //Dati in possesso
 const prezzoAlKm = 0.21;
 const discountUnder = 20;
@@ -29,11 +36,10 @@ if (discount === "mineronne"){
 //arrotondo la cifra prima di mandarla in output
 prezzoNetto = prezzoNetto.toFixed(2)
 console.log('Prezzo al quale è stato applicato lo sconto -->', prezzoNetto);
+
+//Compilo i campi con l'innerHTML
+document.getElementById('nomeOutput').innerHTML = name;
+document.getElementById('carrozzaOutput').innerHTML = " " + carrozzaNumber;
+document.getElementById('codiceCpOutput').innerHTML = " " + cpCode;
+document.getElementById('prezzoNettoOutput').innerHTML = '' + prezzoNetto;
 })
-
-//Random number generator Carrozza e Cp code
-let carrozzaNumber = Math.floor(Math.random() * 21);
-console.log('numero carrozza-->',carrozzaNumber);
-
-let cpCode = Math.floor(Math.random() * 1001) + 1000;
-console.log('Cp Code-->',cpCode);
