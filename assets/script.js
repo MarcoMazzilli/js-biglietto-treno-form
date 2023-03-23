@@ -47,13 +47,19 @@ document.getElementById('codiceCpOutput').innerHTML = " " + cpCode;
 document.getElementById('prezzoNettoOutput').innerHTML = '' + prezzoNetto;
 
 //Specifico il tipo di offerta all'interno del biglietto
+//Mostro il ticket togliendo la classe hide
+containerTicket.classList.remove("hide")
 })
 
-//intercetto il bottone di reset e lo assegno
 
+//intercetto il bottone di reset e lo assegno
 const reset = document.getElementById("resetInput");
 reset.addEventListener('click' , function (){
   const name = document.getElementById("nameInput").value= ""
   const distance = document.getElementById('distanceInput').value = ""
   const discount = document.getElementById('select').value = ""
+
+  const containerTicket = document.getElementById("containerTicket")
+  //nascondo il ticket aggiungendo la classe hide
+  containerTicket.classList.add("hide")
 })
