@@ -48,3 +48,12 @@ document.getElementById('prezzoNettoOutput').innerHTML = '' + prezzoNetto;
 
 //Specifico il tipo di offerta all'interno del biglietto
 })
+
+//intercetto il bottone di reset e lo assegno
+
+const reset = document.getElementById("resetInput");
+reset.addEventListener('click' , function (){
+  const name = document.getElementById("nameInput").value= ""
+  const distance = document.getElementById('distanceInput').value = ""
+  const discount = document.getElementById('select').value = ""
+})
